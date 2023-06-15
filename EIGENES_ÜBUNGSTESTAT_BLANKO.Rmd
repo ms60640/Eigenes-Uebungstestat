@@ -1,0 +1,240 @@
+---
+title: "Testat Vorbereitung"
+author: "Dein Name"
+date: "yyyy-mm-dd"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(igraph)
+
+```
+
+# Wissensfragen
+- Was ist ein Netzwerk?
+- Wie unterscheiden sich One-Mode und Two-Mode Netzwerke?
+- Von wievielen und welchen Kategorien sind starke Beziehungen nach Granovetter abhängig?
+- Nenne 4 Zentralitätsmaße und was man aus ihnen herauslesen kann.
+- Nenne einen Klassiker der Netzwerkforschung.
+- Was sind Komponenten?
+- Wieviele Triaden gibt es?
+- Was ist ein Ego-Netzwerk?
+- Wofür eignen sich Teilnetzwerke?
+- Wann ist ein Knoten wichtig in einem Netzwerk?
+- Was sind Dyaden und Triaden?
+- Welche Daten müssen jeweils in einer Edge- und in einer Nodelist stehen?
+- Nenne drei Beispiele für Netzwerkeffekte.
+- Was sagt die Dichte eines Netzwerks aus?
+- Was unterscheidet gerichtete von ungerichteten Netzwerken?
+- Wofür braucht man das igraph Package?
+- Zähle zwei Attribute auf, die man bei Edges verändern kann (z.B. die Pfeilgröße)
+- Erkläre, wie man Teilnetzwerke mit mehreren Eigenschaften/Bedingungen erstellt.
+- Was berechnet die Cluster Walktrap Analyse?
+- Was muss man in einem Ratsuche-Netzwerk berechnen, um zu erfahren welcher Knoten beispielsweise oft um Rat gefragt wird?
+- Was sagt der Grad in einem Ego-Netzwerk aus?
+- Wie findet man Sollbruchstellen in einem Netzwerk?
+- Was beschreibt die Transititivtät in einem Netzwerk?
+- Welche Art von Beziehung könnten Knoten mit einer gegenseitigen Reziprozität haben?
+- Wie berechnet man bei gerichteten Netzwerken die Reziprozität?
+- Was sagt uns das MAN-Schema bei Dyaden und Triaden?
+- Was unterscheidet Komponenten und Cluster voneinander?
+- Was macht normalized mit unseren Zahlen, die wir als Eregbnis bekommen?
+- Nenne 3 Beispiele für Vertex- und für Edge-Attribute.
+- Was bedeutet "Ego" und "Alteri"?
+- Nenne 3 Beispiele für Akteure (Knoten).
+- Nenne 3 Beispiele für eine asymmetrische und eine symmetrische Beziehung.
+- Mache ein Beispiel für positive und für negative Transitivität.
+- Was sind Isolates?
+- Wie unterscheiden sich Indegrees und Outdegrees?
+- Wie könnte man unterschiedliche Akteure (z.B. Personen und Organisationen) passend und unterschiedlich visulaisieren in einem Netzwerk?
+- Was sind strukturelle Löcher?
+
+# Codebuch
+Hier: https://github.com/hdm-crpr/226305/blob/master/data/crpr2/codebuch.md
+
+```{r Netzwerk erstellen}
+
+# Erstelle ein gerichtetes Netzwerk aus der Edge- und Nodelist: https://github.com/hdm-crpr/226305/tree/master/data/crpr2
+
+# Gerichtet:
+
+
+# So wäre es ungerichtet:
+
+
+# Prüfe ob die beiden Netzwerke jeweils wirklich gerichtet oder ungerichtet sind:
+
+```
+
+```{r Erste Berechnungen}
+
+# Welche Knoten sind am weitesten voneinander entfernt?
+
+
+# Welche Kanten- und welche Knotenattribute enthält das Netzwerk?
+
+
+# Zeige alle Werte für das Attribut crpr an
+
+
+# Zähle die Anzahl an Knoten
+
+
+```
+
+
+```{r Eigenschaften verändern: dauerhaft}
+
+# Verändere folgende Eigenschaften dauerhaft:
+
+# Geschlechter in verschiedenen Farben
+
+# Vertiefungsrichtung in verschiedenen Farben
+
+# Visualisierung:
+
+
+```
+
+
+```{r Eigenschaften verändern: temporär}
+# Verändere folgende Eigenschaften temporär für eine Visualisierung:
+# Knotenfarbe
+# Pfeilgröße
+# Kantenfarbe
+
+
+# Visualisierung:
+
+
+
+```
+
+```{r Components}
+
+# Wieviele Komponenten gibt es im Netzwerk?
+
+# Auftrennen nach Komponenten:
+
+# Viusalisierung der Komponenten und des Hauptnetzwerks:
+
+```
+
+```{r Cluster Walktrap-Analyse}
+
+# Cluster Walktrap-Analyse des Netzwerks:
+
+
+# Visualisierung:
+
+```
+
+
+```{r Teilnetzwerk}
+
+# Erstelle folgende Teilnetzwerke und visualisiere mit Haupt- und Unterüberschrift:
+
+# 1) Rauchende CRler über 20 Jahre
+
+# Visualisierung
+
+# 2) Weibliche Android-Userinnen mit blauen Augen
+
+# Visualisierung
+
+# 3) Diverse Studis mit starken Beziehungen
+
+# Visualisierung
+
+
+```
+
+```{r Dichte}
+
+# Vergleiche die Dichte in den drei Netzwerken:
+
+
+# Was könnte das Ergebnis hier über die Netzwerke aussagen?
+
+
+```
+
+```{r Knoten mit hoechstem Eigenvektor}
+
+# Welcher Knoten hat den höchsten Eigenvektor-Wert im Hauptnetzwerk?
+
+# Erstelle für diesen Knoten ein Ego-Netzwerk zweiten Grades:
+
+```
+
+```{r Naehe}
+
+# Welcher Knoten hat die größte Closeness im  Hauptnetzwerk?
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
